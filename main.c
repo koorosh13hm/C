@@ -12,11 +12,17 @@ int main()
     while (1)
     {
         selechar = name[counter];
-        printf("Character %c: No. %d\n", selechar, counter + 1);
+
         if (selechar == '\0')
+        {
             break;
+        }
         else
+        {
+            printf("Character %c: No. %d\n", selechar, counter + 1);
             counter++;
+        }
+
     };
 
     printf("%s has %d characters.", name, counter);
